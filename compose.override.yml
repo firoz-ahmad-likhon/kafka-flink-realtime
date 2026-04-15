@@ -1,0 +1,8 @@
+services:
+  simulator:
+    build:
+      context: .
+      dockerfile: infra/simulator/Dockerfile
+    volumes:
+      - ./pytest.ini:/app/pytest.ini
+      - ./simulator:/app/simulator
